@@ -1,0 +1,153 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(206, 206, 206);
+    padding: 10px 150px 0px 150px;
+    &-top{
+        display: flex;
+        flex-direction: column;
+        #f-top-s{
+            display: flex;
+            align-items: center;
+        }
+        &-logo{
+            background-image: url(https://www.atribuna.com.br/img/ic-logo-footer.png);
+            background-size: 100%;
+            height: 50px;
+            width: 270px;
+        }
+        #f-assine{
+            display: flex;
+            align-items: center;
+            background-color: rgb(43, 43, 43);
+            color: rgb(206, 206, 206);
+            border-radius: 7px;
+            height: 20px;
+            padding: 3px 6px;
+            font-size: 14px;
+            font-weight: 900;
+            text-decoration: none;
+        }
+        #f-goto-top{
+            position: absolute;
+            right: 150px;
+            cursor: pointer;
+        }
+        &-social{
+            display: flex;
+            // justify-content: center;
+            a{
+                text-decoration: none;
+            }
+            #f-facebook, #f-instagram, #f-twitter, #f-youtube{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: rgb(43, 43, 43);
+                border: 1.5px solid rgb(43, 43, 43);
+                border-radius: 100%;
+                height: 25px;
+                width: 25px;
+                margin: 0px 10px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &-bottom{
+        display: flex;
+        flex-flow: column wrap;
+        // align-content: center;
+        height: 650px;   
+        margin-left: 10px;
+        &-tit{
+            margin-right: 20px;
+            p, p a{
+                font-size: 14px;
+                font-weight: 900;
+                color: black !important;
+                text-decoration: none;
+            }
+            p{
+                margin: 10px 0px 10px 0px;
+            }
+            &#f-ultimas{
+                order: 1;
+                height: 100%;
+            }
+            &#f-cidades{
+                order: 2;
+            }
+            &#f-esportes{
+                order: 3;
+            }
+            &#f-variedades{
+                order: 4;
+            }
+            &#f-opiniao{
+                order: 5;
+                flex-basis: 100%;
+            }
+            &#f-eventos{
+                order: 6;
+                flex-basis: 50%;
+            }
+            &#f-especiais{
+                order: 7;
+                flex-basis: 20%;
+            }
+            &#f-anuncie{
+                order: 8;
+              
+            }
+            &#f-assinatura{
+                order: 9;
+                
+            }
+            &#f-classificados{
+                order: 10;
+               
+            }
+            &#f-outros{
+                order: 11;
+                form {
+                    input{
+                        font-size: 14px;
+                        border-radius: 4px;
+                        border: none;
+                        height: 22px;
+                        padding-left: 3px;
+                    }
+                    button{
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        font-size: 12px;
+                        height: 25px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+        &-sub{
+            border-radius: 4px;
+            background-color: transparent;
+            transition: 1s;
+            padding: 2px;
+            a{  
+                font-size: 14px;
+                color: 	#696969;
+                text-decoration: none;
+            }
+            &:hover{
+                background-color: rgb(224, 224, 224);
+            }
+        }
+    }
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
